@@ -1,0 +1,107 @@
+@primaryColor: #f8801d;
+@fullWidth: 100%;
+
+main {
+    margin: 0 auto;
+
+    p:first-child {
+        margin-top: 100px;
+        text-align: center;
+    }
+
+    .gallery {
+        width: @fullWidth;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    
+        margin-top: 50px;
+
+        .img-showing {
+            width: @fullWidth;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 10px;
+
+            img {
+                width: 70%;
+                height: 600px;
+                transition: .3s;
+
+                &:hover {
+                    cursor: pointer;
+                }
+
+                @media only screen and (max-width: 1200px) {
+                    width: 90%;
+                }
+
+                @media only screen and (max-width: 800px) {
+                    height: 400px;
+                }
+
+                @media only screen and (max-width: 600px) {
+                    height: 300px;
+                }
+            }
+        }
+
+        .fa-angle-right {
+            margin-left: 15px;
+            font-size: 60px;
+        
+            transition: .4s;
+
+            &:hover {
+                color: @primaryColor;
+                cursor: pointer;
+            }
+
+            @media only screen and (max-width: 600px) {
+                font-size: 40px;
+            }
+        }
+
+        .fa-angle-left {
+            margin-right: 15px;
+            font-size: 60px;
+        
+            transition: .4s;
+
+            &:hover {
+                color: @primaryColor;
+                cursor: pointer;
+            }
+
+            @media only screen and (max-width: 600px) {
+                font-size: 40px;
+            }
+        }
+
+        img {
+            width: 200px;
+            height: 150px;
+            margin: 5px;
+
+            &:hover {
+                cursor: pointer;
+            }
+
+            @media only screen and (max-width: 1700px) {
+                width: 25%;
+                height: 200px;
+            }
+
+            @media only screen and (max-width: 800px) {
+                width: 45%;
+                height: 150px;
+            }
+
+            @media only screen and (max-width: 600px) {
+                width: 70%;
+                height: 150px;
+            }
+        }
+    }
+}

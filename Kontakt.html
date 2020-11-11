@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weird Rubber Duck Store</title>
+
+    <!-- <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact-style.css"> -->
+
+    <!-- less -->
+    <link rel="stylesheet/less" type="text/css" href="css/style.less" />
+    <link rel="stylesheet/less" type="text/css" href="css/contact-style.less" />
+    <script src="//cdn.jsdelivr.net/npm/less" ></script>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+
+    <link rel="stylesheet/less" type="text/css" href="css/style.less" />
+    <script src="//cdn.jsdelivr.net/npm/less" ></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <i class="fas fa-shopping-cart fa-2x"></i>
+            <p>Customer is always right!</p>
+        </div>
+        <nav class="nav">
+            <ul>
+                <a href="index.html">
+                    <li>Home</li>
+                </a>
+                <a href="O-nama.html">
+                    <li>O nama</li>
+                </a>
+                <li>Satisfied Customers</li>
+                <a href="Kontakt.html">
+                    <li>Kontakt</li>
+                </a>
+            </ul>
+        </nav>
+
+        <div class="ham">
+            <i class="fas fa-bars fa-2x"></i>
+        </div>
+        <nav class="hamburger-menu">
+            <ul>
+                <a href="index.html">
+                    <li>Home</li>
+                </a>
+                <a href="O-nama.html">
+                    <li>O nama</li>
+                </a>
+                <li>Satisfied Customers</li>
+                <a href="Kontakt.html">
+                    <li>Kontakt</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact">
+            <div class="contact-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d22651.830861666956!2d20.479619049999997!3d44.79142885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2srs!4v1605016675544!5m2!1sen!2srs" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+
+            <div class="contact-form">
+                <form>
+                    <label for="name">Ime:</label>
+                    <input type="text" id="name" name="name"><br>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email"><br>
+
+                    <label for="title">Naslov:</label>
+                    <input type="text" id="title" name="title"><br>
+
+                    <label for="message">Poruka:</label>
+                    <!-- <input type="textarea" id="message" name="message"><br> -->
+                    <textarea name="message" id="message"></textarea>
+                    <button>Submit</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/ham-menu.js"></script>
+</body>
+</html>
